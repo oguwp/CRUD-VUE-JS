@@ -1,0 +1,47 @@
+<template>
+  <div id="app">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <router-link to="/" class="navbar-brand">OGU CRUD</router-link>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link to="/tutorials" class="nav-link">List</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/add" class="nav-link">Add</router-link>
+        </li>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <h2>Listing</h2>
+      <router-view />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "app"
+};
+</script>
+
+<style scoped>
+.container h2 {
+  text-align: center;
+  color: white;
+  margin: 25px auto;
+}
+h2 {
+  color: white;
+}
+h4, p, label {
+  color: white;
+}
+
+#app {
+  background-color: #343A40;
+}
+html {
+  background-color: #343A40;
+}
+</style>
